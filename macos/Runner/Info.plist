@@ -2,21 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-peripheral</string>
-		<string>bluetooth-central</string>
-	</array>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.healthcare-fitness</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -29,24 +20,33 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.healthcare-fitness</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAccessibilityUsageDescription</key>
+	<string>BikeControl needs to send keys to your trainer app.</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>BikeControl requires Bluetooth to connect to your devices.</string>
-	<key>NSLocalNetworkUsageDescription</key>
-    <string>This app connects to your trainer app on your local network.</string>
-    <key>NSBonjourServices</key>
-    <array>
-      <string>_wahoo-fitness-tnp._tcp</string>
-      <string>_openbikecontrol._tcp</string>
-    </array>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_wahoo-fitness-tnp._tcp</string>
+		<string>_openbikecontrol._tcp</string>
+	</array>
 	<key>NSHumanReadableCopyright</key>
 	<string>$(PRODUCT_COPYRIGHT)</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app connects to your trainer app on your local network.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSAccessibilityUsageDescription</key>
-	<string>BikeControl needs to send keys to your trainer app.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-peripheral</string>
+		<string>bluetooth-central</string>
+	</array>
 </dict>
 </plist>

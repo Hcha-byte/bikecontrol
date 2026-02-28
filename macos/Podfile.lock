@@ -1,6 +1,4 @@
 PODS:
-  - audio_session (0.0.1):
-    - FlutterMacOS
   - bluetooth_low_energy_darwin (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -25,9 +23,6 @@ PODS:
     - FlutterMacOS
   - ios_receipt (0.0.1):
     - FlutterMacOS
-  - just_audio (0.0.1):
-    - Flutter
-    - FlutterMacOS
   - keypress_simulator_macos (0.0.1):
     - FlutterMacOS
   - media_key_detector_macos (0.0.1):
@@ -36,12 +31,6 @@ PODS:
     - FlutterMacOS
   - package_info_plus (0.0.1):
     - FlutterMacOS
-  - purchases_flutter (9.10.6):
-    - FlutterMacOS
-    - PurchasesHybridCommon (= 17.27.1)
-  - PurchasesHybridCommon (17.27.1):
-    - RevenueCat (= 5.54.1)
-  - RevenueCat (5.54.1)
   - screen_retriever_macos (0.0.1):
     - FlutterMacOS
   - shared_preferences_foundation (0.0.1):
@@ -58,7 +47,6 @@ PODS:
     - FlutterMacOS
 
 DEPENDENCIES:
-  - audio_session (from `Flutter/ephemeral/.symlinks/plugins/audio_session/macos`)
   - bluetooth_low_energy_darwin (from `Flutter/ephemeral/.symlinks/plugins/bluetooth_low_energy_darwin/darwin`)
   - device_info_plus (from `Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos`)
   - file_selector_macos (from `Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos`)
@@ -70,12 +58,10 @@ DEPENDENCIES:
   - in_app_purchase_storekit (from `Flutter/ephemeral/.symlinks/plugins/in_app_purchase_storekit/darwin`)
   - in_app_review (from `Flutter/ephemeral/.symlinks/plugins/in_app_review/macos`)
   - ios_receipt (from `Flutter/ephemeral/.symlinks/plugins/ios_receipt/macos`)
-  - just_audio (from `Flutter/ephemeral/.symlinks/plugins/just_audio/darwin`)
   - keypress_simulator_macos (from `Flutter/ephemeral/.symlinks/plugins/keypress_simulator_macos/macos`)
   - media_key_detector_macos (from `Flutter/ephemeral/.symlinks/plugins/media_key_detector_macos/macos`)
   - nsd_macos (from `Flutter/ephemeral/.symlinks/plugins/nsd_macos/macos`)
   - package_info_plus (from `Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos`)
-  - purchases_flutter (from `Flutter/ephemeral/.symlinks/plugins/purchases_flutter/macos`)
   - screen_retriever_macos (from `Flutter/ephemeral/.symlinks/plugins/screen_retriever_macos/macos`)
   - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin`)
   - universal_ble (from `Flutter/ephemeral/.symlinks/plugins/universal_ble/darwin`)
@@ -83,14 +69,7 @@ DEPENDENCIES:
   - wakelock_plus (from `Flutter/ephemeral/.symlinks/plugins/wakelock_plus/macos`)
   - window_manager (from `Flutter/ephemeral/.symlinks/plugins/window_manager/macos`)
 
-SPEC REPOS:
-  trunk:
-    - PurchasesHybridCommon
-    - RevenueCat
-
 EXTERNAL SOURCES:
-  audio_session:
-    :path: Flutter/ephemeral/.symlinks/plugins/audio_session/macos
   bluetooth_low_energy_darwin:
     :path: Flutter/ephemeral/.symlinks/plugins/bluetooth_low_energy_darwin/darwin
   device_info_plus:
@@ -113,8 +92,6 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/in_app_review/macos
   ios_receipt:
     :path: Flutter/ephemeral/.symlinks/plugins/ios_receipt/macos
-  just_audio:
-    :path: Flutter/ephemeral/.symlinks/plugins/just_audio/darwin
   keypress_simulator_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/keypress_simulator_macos/macos
   media_key_detector_macos:
@@ -123,8 +100,6 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/nsd_macos/macos
   package_info_plus:
     :path: Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos
-  purchases_flutter:
-    :path: Flutter/ephemeral/.symlinks/plugins/purchases_flutter/macos
   screen_retriever_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/screen_retriever_macos/macos
   shared_preferences_foundation:
@@ -139,32 +114,27 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/window_manager/macos
 
 SPEC CHECKSUMS:
-  audio_session: 728ae3823d914f809c485d390274861a24b0904e
-  bluetooth_low_energy_darwin: 50bc79258e60586e4c4bed5948bd31d925f37fac
-  device_info_plus: 1b14eed9bf95428983aed283a8d51cce3d8c4215
-  file_selector_macos: 3e56eaea051180007b900eacb006686fd54da150
-  flutter_local_notifications: 4ccab5b7a22835214a6672e3f9c5e8ae207dab36
-  flutter_secure_storage_darwin: 557817588b80e60213cbecb573c45c76b788018d
-  flutter_volume_controller: 25d09126b0d695560f11c80b1311d5063fed882f
+  bluetooth_low_energy_darwin: 8027d98a11f64f880e4c738157dfe5ca88d28dbc
+  device_info_plus: 4fb280989f669696856f8b129e4a5e3cd6c48f76
+  file_selector_macos: 9e9e068e90ebee155097d00e89ae91edb2374db7
+  flutter_local_notifications: 4bf37a31afde695b56091b4ae3e4d9c7a7e6cda0
+  flutter_secure_storage_darwin: acdb3f316ed05a3e68f856e0353b133eec373a23
+  flutter_volume_controller: ae08bf0838e4901f299781c3ab5056dfab0c2f74
   FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
-  gamepads_darwin: 07af6c60c282902b66574c800e20b2b26e68fda8
-  in_app_purchase_storekit: 2342c0a5da86593124d08dd13d920f39a52b273a
-  in_app_review: 866c9b17c87a7b46a395bda43f5d3ca02deb585a
-  ios_receipt: 8741a75f39e6ca0866313b73c69a5b674cf5c98c
-  just_audio: a42c63806f16995daf5b219ae1d679deb76e6a79
-  keypress_simulator_macos: f8556f9101f9f2f175652e0bceddf0fe82a4c6b2
-  media_key_detector_macos: a93757a483b4b47283ade432b1af9e427c47329f
-  nsd_macos: 1a38a38a33adbb396b4c6f303bc076073514cadc
-  package_info_plus: 12f1c5c2cfe8727ca46cbd0b26677728972d9a5b
-  purchases_flutter: 55ed35144683d8673f0a4b5077e8f4d8291f291e
-  PurchasesHybridCommon: 027f03312519c51056457eb2e4f7ee1c91b61b8f
-  RevenueCat: ecbba580fa453b0d4a0475449b904196d74ef678
-  screen_retriever_macos: 776e0fa5d42c6163d2bf772d22478df4b302b161
-  shared_preferences_foundation: 5086985c1d43c5ba4d5e69a4e8083a389e2909e6
-  universal_ble: cf52a7b3fd2e7c14d6d7262e9fdadb72ab6b88a6
-  url_launcher_macos: 175a54c831f4375a6cf895875f716ee5af3888ce
-  wakelock_plus: 9d63063ffb7af1c215209769067c57103bde719d
-  window_manager: e25faf20d88283a0d46e7b1a759d07261ca27575
+  gamepads_darwin: 643b6a69e20ca678fae83781b7f7fc8f15f5d710
+  in_app_purchase_storekit: 22cca7d08eebca9babdf4d07d0baccb73325d3c8
+  in_app_review: 66e7680752b632d83f4f0e88b34d52ed303fbff4
+  ios_receipt: 5c29b872574d7d8e1c65cd6bb878f684601e856e
+  keypress_simulator_macos: b5c87294b03ab5a2e743873a7dabe1ff5589129d
+  media_key_detector_macos: f2fecf51b0cc30d6e2e4605410ae5602ff067ed8
+  nsd_macos: a472240e770b92f6c6df1022403aa29c90d012e3
+  package_info_plus: f0052d280d17aa382b932f399edf32507174e870
+  screen_retriever_macos: 452e51764a9e1cdb74b3c541238795849f21557f
+  shared_preferences_foundation: 7036424c3d8ec98dfe75ff1667cb0cd531ec82bb
+  universal_ble: ff19787898040d721109c6324472e5dd4bc86adc
+  url_launcher_macos: f87a979182d112f911de6820aefddaf56ee9fbfd
+  wakelock_plus: 917609be14d812ddd9e9528876538b2263aaa03b
+  window_manager: b729e31d38fb04905235df9ea896128991cad99e
 
 PODFILE CHECKSUM: 0fb45929fd801f111c1e68cc98ccc2d06ac5e49e
 

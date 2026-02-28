@@ -80,14 +80,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.0"
-  audio_session:
-    dependency: transitive
-    description:
-      name: audio_session
-      sha256: "8f96a7fecbb718cb093070f868b4cdcb8a9b1053dce342ff8ab2fde10eb9afb7"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.2"
   bluetooth_low_energy:
     dependency: "direct main"
     description:
@@ -305,14 +297,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
-  equatable:
-    dependency: transitive
-    description:
-      name: equatable
-      sha256: "3e0141505477fd8ad55d6eb4e7776d3fe8430be8e497ccb1521370c3f21a3e2b"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.8"
   expressions:
     dependency: transitive
     description:
@@ -876,30 +860,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.9.0"
-  just_audio:
-    dependency: transitive
-    description:
-      name: just_audio
-      sha256: "9694e4734f515f2a052493d1d7e0d6de219ee0427c7c29492e246ff32a219908"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.10.5"
-  just_audio_platform_interface:
-    dependency: transitive
-    description:
-      name: just_audio_platform_interface
-      sha256: "2532c8d6702528824445921c5ff10548b518b13f808c2e34c2fd54793b999a6a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.6.0"
-  just_audio_web:
-    dependency: transitive
-    description:
-      name: just_audio_web
-      sha256: "6ba8a2a7e87d57d32f0f7b42856ade3d6a9fbe0f1a11fabae0a4f00bb73f0663"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.4.16"
   keypress_simulator:
     dependency: "direct main"
     description:
@@ -1325,7 +1285,7 @@ packages:
   prop:
     dependency: "direct main"
     description:
-      path: prop
+      path: prop_public
       relative: true
     source: path
     version: "0.0.1"
@@ -1361,22 +1321,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.7"
-  purchases_flutter:
-    dependency: "direct main"
-    description:
-      name: purchases_flutter
-      sha256: "1a7132bac772d90e9b959364369beddfc7fca8a3d2909d6e4d818cef7fd64a8f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "9.10.6"
-  purchases_ui_flutter:
-    dependency: "direct main"
-    description:
-      name: purchases_ui_flutter
-      sha256: "350550b6fe8cf91a8de9e613ed38829fcdd5e098f0ae1ae25d5b2d45c680c842"
-      url: "https://pub.dev"
-    source: hosted
-    version: "9.10.6"
   quiver:
     dependency: transitive
     description:
@@ -1592,14 +1536,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.1"
-  synchronized:
-    dependency: transitive
-    description:
-      name: synchronized
-      sha256: c254ade258ec8282947a0acbbc90b9575b4f19673533ee46f2f6e9b3aeefd7c0
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.4.0"
   term_glyph:
     dependency: transitive
     description:
@@ -1612,10 +1548,10 @@ packages:
     dependency: transitive
     description:
       name: test_api
-      sha256: "19a78f63e83d3a61f00826d09bc2f60e191bf3504183c001262be6ac75589fb8"
+      sha256: "93167629bfc610f71560ab9312acdda4959de4df6fac7492c89ff0d3886f6636"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.8"
+    version: "0.7.9"
   time:
     dependency: transitive
     description:
@@ -1897,5 +1833,5 @@ packages:
     source: hosted
     version: "0.0.4"
 sdks:
-  dart: ">=3.10.3 <4.0.0"
+  dart: ">=3.11.0 <4.0.0"
   flutter: ">=3.38.4"

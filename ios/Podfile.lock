@@ -38,22 +38,13 @@ PODS:
     - Flutter
   - permission_handler_apple (9.3.0):
     - Flutter
-  - purchases_flutter (9.10.6):
     - Flutter
     - PurchasesHybridCommon (= 17.27.1)
-  - purchases_ui_flutter (9.10.6):
-    - Flutter
-    - PurchasesHybridCommonUI (= 17.27.1)
   - PurchasesHybridCommon (17.27.1):
-    - RevenueCat (= 5.54.1)
   - PurchasesHybridCommonUI (17.27.1):
     - PurchasesHybridCommon (= 17.27.1)
-    - RevenueCatUI (= 5.54.1)
   - restart_app (0.0.1):
     - Flutter
-  - RevenueCat (5.54.1)
-  - RevenueCatUI (5.54.1):
-    - RevenueCat (= 5.54.1)
   - sensors_plus (0.0.1):
     - Flutter
   - shared_preferences_foundation (0.0.1):
@@ -86,8 +77,6 @@ DEPENDENCIES:
   - nsd_ios (from `.symlinks/plugins/nsd_ios/ios`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
-  - purchases_flutter (from `.symlinks/plugins/purchases_flutter/ios`)
-  - purchases_ui_flutter (from `.symlinks/plugins/purchases_ui_flutter/ios`)
   - restart_app (from `.symlinks/plugins/restart_app/ios`)
   - sensors_plus (from `.symlinks/plugins/sensors_plus/ios`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
@@ -139,10 +128,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/package_info_plus/ios"
   permission_handler_apple:
     :path: ".symlinks/plugins/permission_handler_apple/ios"
-  purchases_flutter:
-    :path: ".symlinks/plugins/purchases_flutter/ios"
-  purchases_ui_flutter:
-    :path: ".symlinks/plugins/purchases_ui_flutter/ios"
   restart_app:
     :path: ".symlinks/plugins/restart_app/ios"
   sensors_plus:
@@ -175,8 +160,6 @@ SPEC CHECKSUMS:
   nsd_ios: 8c37babdc6538e3350dbed3a52674d2edde98173
   package_info_plus: c0502532a26c7662a62a356cebe2692ec5fe4ec4
   permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
-  purchases_flutter: b3c0792197f69cd7af4c2449b71df6ac6378aace
-  purchases_ui_flutter: caae6d62ea23c6fe964992a28353211cc74b244a
   PurchasesHybridCommon: 027f03312519c51056457eb2e4f7ee1c91b61b8f
   PurchasesHybridCommonUI: 48afb5e29204958bff1276b0f7acb8e4b59fe99a
   restart_app: 806659942bf932f6ce51c5372f91ce5e81c8c14a

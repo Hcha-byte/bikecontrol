@@ -12,7 +12,6 @@ import 'package:bike_control/widgets/ui/toast.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:shadcn_flutter/shadcn_flutter.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -302,7 +301,7 @@ class _IAPStatusWidgetState extends State<IAPStatusWidget> {
                                                   OutlineButton(
                                                     child: Text(context.i18n.getSupport),
                                                     onPressed: () async {
-                                                      final appUserId = await Purchases.appUserID;
+                                                      final appUserId = "dev-user";
                                                       launchUrlString(
                                                         'mailto:jonas@bikecontrol.app?subject=Bike%20Control%20Purchase%20Redemption%20Help%20for%20$appUserId',
                                                       );
@@ -395,7 +394,7 @@ class _IAPStatusWidgetState extends State<IAPStatusWidget> {
                                   OutlineButton(
                                     child: Text(context.i18n.getSupport),
                                     onPressed: () async {
-                                      final appUserId = await Purchases.appUserID;
+                                      final appUserId = "dev-user";
                                       launchUrlString(
                                         'mailto:jonas@bikecontrol.app?subject=Bike%20Control%20Purchase%20Redemption%20Help%20for%20$appUserId',
                                       );
@@ -487,7 +486,7 @@ class _IAPStatusWidgetState extends State<IAPStatusWidget> {
   }) async {
     final uri = Uri.parse('$supabaseUrl/functions/v1/redeem-purchase');
 
-    final appUserId = await Purchases.appUserID;
+    final appUserId = "dev-user";
 
     final response = await http.post(
       uri,

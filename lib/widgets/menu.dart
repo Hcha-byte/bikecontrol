@@ -11,7 +11,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' show showLicensePage;
 import 'package:in_app_review/in_app_review.dart';
 import 'package:intl/intl.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:shadcn_flutter/shadcn_flutter.dart';
 import 'package:universal_ble/universal_ble.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -89,9 +88,9 @@ List<Widget> buildMenuButtons(BuildContext context, BCPage currentPage, VoidCall
 }
 
 Future<String> debugText() async {
-  final userId = IAPManager.instance.isUsingRevenueCat ? (await Purchases.appUserID) : null;
+	final userId = IAPManager.instance.isUsingRevenueCat ? "dev-user" : null;
   return '''
-                
+
 ---
 App Version: ${packageInfoValue?.version}${shorebirdPatch?.number != null ? '+${shorebirdPatch!.number}' : ''}
 Platform: ${Platform.operatingSystem} ${Platform.operatingSystemVersion}
@@ -100,7 +99,7 @@ Trainer App: ${core.settings.getTrainerApp()?.name ?? '-'}
 Connected Controllers: ${core.connection.devices.map((e) => e.toString()).join(', ')}
 Connected Trainers: ${core.logic.connectedTrainerConnections.map((e) => e.title).join(', ')}
 Status: ${IAPManager.instance.isPurchased.value ? 'Full Version' : 'Test Version'}${userId != null ? ' (User ID: $userId)' : ''}
-Logs: 
+Logs:
 ${core.connection.lastLogEntries.reversed.joinToString(separator: '\n', transform: (e) => '${e.date.toString().split('.').first} - ${e.entry}')}
 ''';
 }
